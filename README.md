@@ -11,3 +11,11 @@ picker ei myöskään näkynyt ilman tyylejä:
 picker: {
     width: 200,
   },
+
+
+jos haluat että ios näppis häipyy kun painat näyttöä,
+
+import {TouchableWithoutFeedback, Keyboard } from 'react-native';
+
+ <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
+     </TouchableWithoutFeedback>
